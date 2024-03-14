@@ -282,7 +282,7 @@ public class Main {
 }
 ```
 --In Java, the new keyword is used to create new instances (objects) of classes. It dynamically allocates memory for the object and initializes its  
-fields using the constructor of the class  
+fields using the constructor of the class   
 
 **Output**  
 ```py
@@ -290,7 +290,59 @@ Object 1:
 x: 10, name: Alice
 Object 2:
 x: 20, name: Bob
+```
 
+##  Constructer  
+In Java, a constructor is a special type of method that is used to initialize objects of a class. It has the same name as the class and does not have a return type, not even void. Constructors are called automatically when an object of the class is created using the new keyword.  
+**Here's how you define a constructor in Java:**
+```py
+public class MyClass {
+    // Constructor
+    public MyClass() {
+        // Constructor body
+        // Initialization code goes here
+    }
+}
+```
+**Types-**  
+**1) Default Constructor:**
+A default constructor is one that takes no arguments.  
+If you don't explicitly define any constructor in your class, Java provides a default constructor automatically.  
+It initializes instance variables with default values (e.g., 0 for numeric types, null for reference types).  
+
+ ```py
+public class MyClass {
+    // Default constructor provided by Java
+    public MyClass() {
+        // Implicitly provided by Java
+    }
+}
+```
+**2)Parameterized Constructor:**  
+A parameterized constructor takes one or more arguments.  
+It allows you to initialize instance variables with specific values provided as arguments during object creation.  
+```py
+public class MyClass {
+    // Parameterized constructor
+    public MyClass(int x, String name) {
+        // Initialize instance variables with arguments
+        this.x = x;
+        this.name = name;
+    }
+}
+```
+**3)Copy Constructor:**
+A copy constructor creates a new object by copying the state of an existing object of the same class.  
+It is used to create a deep copy of the object, ensuring that modifications to one object do not affect the other.  
+```py
+public class MyClass {
+    // Copy constructor
+    public MyClass(MyClass other) {
+        // Copy state from other object
+        this.x = other.x;
+        this.name = other.name;
+    }
+}
 ```
 
 ## packages --  
