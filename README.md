@@ -238,6 +238,61 @@ except:
     print("An error occurred")
 ```
 # oops  
+## classes  and Objects real life example  
+--a class is like a recipe, and an object is like the dish prepared using that recipe.
+## classes  
+In Java, a class is a blueprint or template for creating objects. It defines the attributes (fields) and behaviors (methods) that objects of that class will have.   
+```py
+public class MyClass {
+    // Fields (instance variables)
+    int x;
+    String name;
+
+    // Constructor
+    public MyClass(int x, String name) {
+        this.x = x;
+        this.name = name;
+    }  
+    // Method
+    public void display() {
+        System.out.println("x: " + x + ", name: " + name);
+    }
+}
+```
+--In Java, the "this" keyword is a reference to the current instance of the class. It is primarily used to differentiate between instance variables and   
+parameters or local variables with the same name within a class.   
+## objects
+An object is an instance of a class, meaning it is a specific realization of the class blueprint.   
+An object is created using the new keyword followed by the class name and parentheses (optional if no arguments are passed to the constructor).  
+It represents a specific instance of a class, with its own unique state and behavior.  
+Multiple objects can be created from the same class blueprint.  
+```py
+public class Main {
+    public static void main(String[] args) {
+        // Creating objects of MyClass
+        MyClass obj1 = new MyClass(10, "Alice");
+        MyClass obj2 = new MyClass(20, "Bob");
+
+        // Accessing fields and calling methods of objects
+        System.out.println("Object 1:");
+        obj1.display();
+        System.out.println("Object 2:");
+        obj2.display();
+    }
+}
+```
+--In Java, the new keyword is used to create new instances (objects) of classes. It dynamically allocates memory for the object and initializes its  
+fields using the constructor of the class  
+
+**Output**  
+```py
+Object 1:
+x: 10, name: Alice
+Object 2:
+x: 20, name: Bob
+
+```
+
 ## packages --  
 are set of code used for reusablity purpose.  
 **types**  
