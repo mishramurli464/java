@@ -344,7 +344,39 @@ public class MyClass {
     }
 }
 ```
+## polymorphism  
+**1)Method overloading**  
+--Method overloading allows a class to have multiple methods with the same name but different parameters (different method signatures).  
+Compile-time polymorphism occurs when the compiler determines which method to invoke based on the method signature at compile time. It is achieved through method overloading. 
+```py
+public class Calculator {
+    public int add(int a, int b) {
+        return a + b;
+    }
 
+    public double add(double a, double b) {
+        return a + b;
+    }
+}
+```
+
+**2)Method overriding**  
+--Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass.  
+Runtime polymorphism occurs when the method to be invoked is determined at runtime based on the actual type of the object. It is achieved through method overriding.  
+```py
+class Animal {
+    public void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Dog barks");
+    }
+}
+```
 ## packages --  
 are set of code used for reusablity purpose.  
 **types**  
