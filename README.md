@@ -441,12 +441,168 @@ class Cat extends Animal {
     }
 }
 ```
-## packages --  
+## Encapsulation  
+
+### packages --  
 are set of code used for reusablity purpose.  
 **types**  
 1)built in (ex- 'import.java.util.*;')
 2)user define(used can define by describing packages. and can impport it later)
 
 #access  modifiers
-# getter and setter
+### getter and setter  
+used to access the private members.  
+**Example with Getter and Setter:**   
+```py
+class Person {
+    private String name;
+
+    public Person(String name) {
+        this.name = name;
+    }
+
+    // Getter method
+    public String getName() {
+        return name;
+    }
+
+    // Setter method
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
+**Usage of Getter and Setter:**   
+```py
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of Person
+        Person person = new Person("John");
+
+        // Access the name field using the getter method
+        System.out.println("Name: " + person.getName());
+
+        // Modify the name field using the setter method
+        person.setName("Alice");
+
+        // Access the modified name field using the getter method
+        System.out.println("Name: " + person.getName());
+    }
+}
+```
+**OUTPUT**  
+```py
+Name: John
+Name: Alice
+```
+
+## Abstraction  
+Abstraction in Java is a concept of hiding the implementation details and showing only essential features of an object to the outside world. It allows you to focus on what an object does rather than how it achieves it. Abstraction can be achieved in Java through abstract classes and interfaces.  
+**Example using Abstract Class:**  
+```py
+// Abstract class
+abstract class Shape {
+    // Abstract method (no body)
+    public abstract void draw();
+}
+
+// Concrete class inheriting from the abstract class
+class Circle extends Shape {
+    // Implementing the abstract method
+    public void draw() {
+        System.out.println("Drawing a Circle");
+    }
+}
+
+// Concrete class inheriting from the abstract class
+class Rectangle extends Shape {
+    // Implementing the abstract method
+    public void draw() {
+        System.out.println("Drawing a Rectangle");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create objects of concrete classes
+        Circle circle = new Circle();
+        Rectangle rectangle = new Rectangle();
+
+        // Call the draw method of Circle
+        circle.draw();
+
+        // Call the draw method of Rectangle
+        rectangle.draw();
+    }
+}
+```
+
+**Example using interface:**    
+--
+In Java, an interface is a reference type that defines a set of abstract methods and constants. It provides a way to achieve abstraction and define a contract for classes to adhere to. Unlike classes, interfaces cannot contain instance fields or constructors.  
+
+```py
+// Interface
+interface Shape {
+    void draw(); // Abstract method
+}
+
+// Class implementing the interface
+class Circle implements Shape {
+    // Implementing the draw method
+    public void draw() {
+        System.out.println("Drawing a Circle");
+    }
+}
+
+// Class implementing the interface
+class Rectangle implements Shape {
+    // Implementing the draw method
+    public void draw() {
+        System.out.println("Drawing a Rectangle");
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Create objects of classes implementing the Shape interface
+        Circle circle = new Circle();
+        Rectangle rectangle = new Rectangle();
+
+        // Call the draw method of Circle
+        circle.draw();
+
+        // Call the draw method of Rectangle
+        rectangle.draw();
+    }
+}
+```
+## Static
+--
+In Java, the static keyword is used to declare members (fields or methods) that belong to the class itself rather than to instances of the class. These members are shared among all instances of the class and can be accessed using the class name without the need for creating an object.  
+```py
+class MyClass {
+    // Static field
+    static int count = 0;
+
+    // Constructor to increment count
+    MyClass() {
+        count++;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Create objects of MyClass
+        MyClass obj1 = new MyClass();
+        MyClass obj2 = new MyClass();
+        MyClass obj3 = new MyClass();
+
+        // Access the static field using class name
+        System.out.println("Count: " + MyClass.count);  // Output: Count: 3
+    }
+}
+```
 
