@@ -377,6 +377,70 @@ class Dog extends Animal {
     }
 }
 ```
+## Inheritance  
+
+In Java, inheritance can take different forms, leading to different types of inheritance. These types include:  
+
+1)Single Inheritance: A subclass inherits from only one superclass.  
+2)Multilevel Inheritance: A subclass becomes a superclass for another subclass.  
+3)Hierarchical Inheritance: Multiple subclasses inherit from the same superclass.  
+4)Multiple Inheritance (not supported in Java directly): A subclass inherits from multiple superclasses. However, Java doesn't support this directly, but it can be achieved using interface  
+
+1)Single Inheritance:
+```py
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+```
+2)Multilevel Inheritance:  
+```py
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Labrador extends Dog {
+    void color() {
+        System.out.println("Labrador is brown");
+    }
+}
+
+```
+3)Hierarchical Inheritance:   
+```py
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Cat is meowing");
+    }
+}
+```
 ## packages --  
 are set of code used for reusablity purpose.  
 **types**  
