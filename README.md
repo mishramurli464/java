@@ -235,8 +235,26 @@ try:
     result = 10 / 0
 except:
     # Handle the exception
-    print("An error occurred")
+    print("An error occurred")  
 ```
+
+## Arraylist 
+It represents a resizable array, meaning it can dynamically grow or shrink in size as elements are added or removed.  
+'ArrayList' provides a convenient way to store and manipulate a collection of elements in Java.  
+we store only objects in arrayList.  
+(noncontinous memory)  
+it is stored in heap memory.  
+**Here are some key features of ArrayList:**
+1) Dynamic Size: Unlike arrays, ArrayList does not have a fixed size. It can grow or shrink dynamically based on the number of elements added or removed.  
+
+2) Ordered Collection: ArrayList maintains the order of elements as they are inserted. It means that elements are stored in the order in which they were added to the list.  
+
+3) Random Access: Elements in an ArrayList can be accessed using their index. This allows for fast random access to elements.  
+
+4) Allows Duplicates: ArrayList allows duplicate elements. It can store multiple occurrences of the same element.  
+
+5) Null Elements: ArrayList allows null elements. It means you can store null as an element in an ArrayList.  
+
 # oops  
 ## classes  and Objects real life example  
 --a class is like a recipe, and an object is like the dish prepared using that recipe.
