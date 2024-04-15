@@ -311,7 +311,7 @@ x: 20, name: Bob
 ```
 
 ##  Constructer  
-In Java, a constructor is a special type of method that is used to initialize objects of a class. It has the same name as the class and does not have a return type, not even void. Constructors are called automatically when an object of the class is created using the new keyword.  
+In Java, a constructor is a special type of method that is used to initialize objects of a class (it is automatically called whwenever object is created). It has the same name as the class and does not have a return type, not even void. Constructors are called automatically when an object of the class is created using the new keyword.  
 **Here's how you define a constructor in Java:**
 ```py
 public class MyClass {
