@@ -460,7 +460,8 @@ class Cat extends Animal {
 }
 ```
 ## Encapsulation  
-
+-- wrapping the data variables , and data methods together as a single unit.
+in encapsulation, the variable of class will be hidden from other classes
 ### packages --  
 are set of code used for reusablity purpose.  
 **types**  
