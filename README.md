@@ -461,7 +461,7 @@ class Cat extends Animal {
 ```
 ## Encapsulation  
 -- wrapping the data variables , and data methods together as a single unit.
-in encapsulation, the variable of class will be hidden from other classes
+In encapsulation, the variables of a class will be hidden from other classes and can be accessed through methods of cureent class. this is called DATA HIDING.
 ### packages --  
 are set of code used for reusablity purpose.  
 **types**  
